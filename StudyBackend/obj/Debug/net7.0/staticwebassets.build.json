@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M5r/OR5uHzfvaY4D8pHFx3jdjIJ+n6q7MQqGQKtopFc=",
+  "Hash": "k8VdprnS7fXSguio2iHZX1C/KqsAJJmlavuhOd8b8RE=",
   "Source": "StudyBackend",
   "BasePath": "_content/StudyBackend",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "StudyBackend\\wwwroot",
       "Source": "StudyBackend",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Desktop\\New folder (10)\\new_version_structure_c-main\\StudyBackend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
       "BasePath": "_content/StudyBackend",
       "Pattern": "**"
     }

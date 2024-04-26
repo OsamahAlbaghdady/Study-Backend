@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f0/I/657uwAhE+suB1vgz0IvZXWg3RHi9W2n2TIYN6CUvsfTZhuXAGm70llckInrVAl2EtIVpTrn+UuEu5w7FQ==",
+  "dgSpecHash": "1HupXjpowRNQxDaEit15PUuvBVNPjIo4dyyX+2ay5uJ22P1/YrVp93crqsbyivAxgeaPilsW8pFDfe939InTVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\OSAMAH\\Desktop\\New folder (10)\\new_version_structure_c-main\\StudyBackend\\StudyBackend.csproj",
+  "projectFilePath": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\StudyBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OSAMAH\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\OSAMAH\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

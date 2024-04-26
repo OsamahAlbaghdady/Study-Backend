@@ -2895,11 +2895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OSAMAH\\Desktop\\New folder (10)\\new_version_structure_c-main\\StudyBackend\\StudyBackend.csproj",
+      "projectUniqueName": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\StudyBackend.csproj",
       "projectName": "StudyBackend",
-      "projectPath": "C:\\Users\\OSAMAH\\Desktop\\New folder (10)\\new_version_structure_c-main\\StudyBackend\\StudyBackend.csproj",
+      "projectPath": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\StudyBackend.csproj",
       "packagesPath": "C:\\Users\\OSAMAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OSAMAH\\Desktop\\New folder (10)\\new_version_structure_c-main\\StudyBackend\\obj\\",
+      "outputPath": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\OSAMAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
