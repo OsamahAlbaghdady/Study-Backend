@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "M5r/OR5uHzfvaY4D8pHFx3jdjIJ+n6q7MQqGQKtopFc=",
+  "Source": "StudyBackend",
+  "BasePath": "_content/StudyBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StudyBackend\\wwwroot",
+      "Source": "StudyBackend",
+      "ContentRoot": "C:\\Users\\OSAMAH\\Desktop\\New folder (10)\\new_version_structure_c-main\\StudyBackend\\wwwroot\\",
+      "BasePath": "_content/StudyBackend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "KNId8CU/FEwlW1zKNgjRZF/GixHieGVkm18NO9xWeco=",
+  "Source": "BackEndStructuer",
+  "BasePath": "_content/BackEndStructuer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BackEndStructuer\\wwwroot",
+      "Source": "BackEndStructuer",
+      "ContentRoot": "C:\\Users\\Ali\\Documents\\GitHub\\dxn-web\\dxnapi\\new_version_structure_c\\BackEndStructuer\\wwwroot\\",
+      "BasePath": "_content/BackEndStructuer",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\OSAMAH\Desktop\Study</_PublishTargetUrl>
+    <History>True|2024-04-26T09:31:49.4935918Z;True|2024-04-26T12:29:41.7187095+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=localhost%3bPort=5432%3bDatabase=study%3bUser Id=postgres%3bPassword=1159800%3btrust server certificate=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
