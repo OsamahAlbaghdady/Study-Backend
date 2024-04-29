@@ -46,7 +46,10 @@ public class DegreeServices : IDegreeServices
     public async Task<(List<DegreeDto> degrees, int? totalCount, string? error)> GetAll(DegreeFilter filter)
     {
         var (degrees, totalCount) = await _repositoryWrapper.Degree.GetAll<DegreeDto>(
-            x => (filter.Name == null || x.Name.Contains(filter.Name)),
+            x => 
+                (filter.Name == null || x.Name.Contains(filter.Name)) &&
+                (filter.CountryId == null || x.UniversityDegrees.Any(cd => cd.University.CountryId == filter.CountryId))
+            ,
             filter.PageNumber, filter.PageSize
         );
         return (degrees, totalCount, null);

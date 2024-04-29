@@ -49,7 +49,8 @@ public class UniversityServices : IUniversityServices
         var (universitys, totalCount) = await _repositoryWrapper.University.GetAll<UniversityDto>(
             x => (
                 (filter.Name == null || filter.Name.Contains(x.Name)) &&
-                (filter.CountryId == null || filter.CountryId == x.CountryId)
+                (filter.CountryId == null || filter.CountryId == x.CountryId) &&
+                (filter.FieldId == null || x.UniversityDegrees.Any(ud => ud.Degree.DegreeFields.Any(df => df.FieldId == filter.FieldId)))
                 ),
             filter.PageNumber, filter.PageSize
         );

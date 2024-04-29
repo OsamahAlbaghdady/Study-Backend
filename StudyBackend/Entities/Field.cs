@@ -10,6 +10,9 @@ namespace BackEndStructuer.Entities
         public DateTime? StartDate { get; set; }
         
         public DateTime? EndDate { get; set; }
+        
+        public List<DegreeField>? DegreeFields { get; set; } = new List<DegreeField>();
+
 
     }
 }

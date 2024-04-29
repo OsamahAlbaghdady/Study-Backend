@@ -10,6 +10,7 @@ namespace BackEndStructuer.Entities
         public Guid? FieldId { get; set; }
         
         public Field? Field { get; set; }
+
         
     }
 }

@@ -6,5 +6,7 @@ namespace BackEndStructuer.DATA.DTOs.UniversityFilter
         public string? Name { get; set; }
 
         public Guid? CountryId { get; set; }
+
+        public Guid? FieldId { get; set; }
     }
 }

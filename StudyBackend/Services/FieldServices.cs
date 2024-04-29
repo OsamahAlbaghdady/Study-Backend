@@ -47,8 +47,10 @@ public class FieldServices : IFieldServices
         var (fields, totalCount) = await _repositoryWrapper.Field.GetAll<FieldDto>(
             x => 
                 (filter.Name == null || x.Name.Contains(filter.Name)) &&
-                (filter.StartDate == null || x.StartDate >= filter.StartDate ) &&
-                (filter.EndDate == null || x.EndDate <= filter.EndDate ) ,
+                (filter.StartDate == null || x.StartDate >= filter.StartDate ) && 
+                (filter.EndDate == null || x.EndDate <= filter.EndDate ) &&
+                (filter.DegreeId == null || x.DegreeFields.Any(df => df.DegreeId == filter.DegreeId))
+            ,
             filter.PageNumber , filter.PageSize
         );
         return (fields, totalCount, null);
