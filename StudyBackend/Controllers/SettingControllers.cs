@@ -11,6 +11,7 @@ using BackEndStructuer.DATA.DTOs.SettingForm;
 using BackEndStructuer.DATA.DTOs.SettingUpdate;
 using BackEndStructuer.Entities;
 using System.Threading.Tasks;
+using BackEndStructuer.Utils;
 
 namespace BackEndStructuer.Controllers
 {
@@ -25,12 +26,12 @@ namespace BackEndStructuer.Controllers
 
         [Authorize]
         [HttpGet]
-        public async Task<ActionResult<List<SettingDto>>> GetAll([FromQuery] SettingFilter filter) => Ok(await _settingServices.GetAll(filter));
+        public async Task<ActionResult<Respons<SettingDto>>> GetAll([FromQuery] SettingFilter filter) => Ok(await _settingServices.GetAll() , filter.PageNumber);
 
    
         [Authorize]
         [HttpPut("{id}")]
-        public async Task<ActionResult<Setting>> Update([FromBody] SettingUpdate settingUpdate, Guid id) => Ok(await _settingServices.Update(id , settingUpdate));
+        public async Task<ActionResult<Setting>> Update([FromBody] SettingUpdate settingUpdate) => Ok(await _settingServices.Update(settingUpdate));
 
      
     }

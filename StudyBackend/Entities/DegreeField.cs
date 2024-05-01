@@ -10,7 +10,12 @@ namespace BackEndStructuer.Entities
         public Guid? FieldId { get; set; }
         
         public Field? Field { get; set; }
-
         
+        public long? Price { get; set; }
+
+        public Guid? UniversityId { get; set; }
+        
+        public University? University { get; set; }
+
     }
 }

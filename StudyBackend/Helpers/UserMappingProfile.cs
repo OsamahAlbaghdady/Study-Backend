@@ -34,46 +34,75 @@ namespace BackEndStructuer.Helpers
     {
         public UserMappingProfile()
         {
-            
             CreateMap<Article, ArticleDto>();
-            CreateMap<ArticleForm,Article>().ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
-            CreateMap<ArticleUpdate,Article>().ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+            CreateMap<ArticleForm, Article>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+            CreateMap<ArticleUpdate, Article>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 
 
             CreateMap<AppUser, UserDto>()
-            .ForMember(r => r.Role , src => src.MapFrom(src => src.Role.Name));
-            CreateMap<RegisterForm,App>().ForAllMembers( opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+                .ForMember(r => r.Role, src => src.MapFrom(src => src.Role.Name));
+            CreateMap<RegisterForm, App>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 
             CreateMap<Role, RoleDto>();
             CreateMap<AppUser, AppUser>();
             CreateMap<Permission, PermissionDto>();
-            
-            
-            // here to add
-CreateMap<Setting, SettingDto>();
-CreateMap<SettingForm,Setting>();
-CreateMap<SettingUpdate,Setting>();
-CreateMap<DegreeField, DegreeFieldDto>();
-CreateMap<DegreeFieldForm,DegreeField>();
-CreateMap<DegreeFieldUpdate,DegreeField>();
-CreateMap<UniversityDegree, UniversityDegreeDto>();
-CreateMap<UniversityDegreeForm,UniversityDegree>();
-CreateMap<UniversityDegreeUpdate,UniversityDegree>();
-CreateMap<Field, FieldDto>();
-CreateMap<FieldForm,Field>();
-CreateMap<FieldUpdate,Field>();
-CreateMap<Degree, DegreeDto>();
-CreateMap<DegreeForm,Degree>();
-CreateMap<DegreeUpdate,Degree>();
-CreateMap<University, UniversityDto>();
-CreateMap<UniversityForm,University>();
-CreateMap<UniversityUpdate,University>();
-CreateMap<Country, CountryDto>();
-CreateMap<CountryForm,Country>();
-CreateMap<CountryUpdate,Country>();
 
-            
-            
+
+            // here to add
+            CreateMap<Setting, SettingDto>();
+            CreateMap<SettingForm, Setting>();
+            CreateMap<SettingUpdate, Setting>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
+
+            CreateMap<DegreeField, DegreeFieldDto>()
+                .ForMember(r => r.Degree, src => src.MapFrom(src => src.Degree))    
+                .ForMember(r => r.Field, src => src.MapFrom(src => src.Field))
+                .ForMember(r => r.UniversityName, src => src.MapFrom(src => src.University.Name))
+                .ForMember(r => r.CountryName, src => src.MapFrom(src => src.University.Country.Name))
+                ;
+
+
+            CreateMap<DegreeFieldForm, DegreeField>();
+            CreateMap<DegreeFieldUpdate, DegreeField>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
+
+
+            CreateMap<UniversityDegree, UniversityDegreeDto>();
+            CreateMap<UniversityDegreeForm, UniversityDegree>();
+            CreateMap<UniversityDegreeUpdate, UniversityDegree>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
+
+
+            CreateMap<Field, FieldDto>();
+            CreateMap<FieldForm, Field>();
+            CreateMap<FieldUpdate, Field>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
+
+
+            CreateMap<Degree, DegreeDto>();
+            CreateMap<DegreeForm, Degree>();
+            CreateMap<DegreeUpdate, Degree>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
+
+            CreateMap<University, UniversityDto>();
+            CreateMap<UniversityForm, University>();
+            CreateMap<UniversityUpdate, University>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
+
+            CreateMap<Country, CountryDto>();
+            CreateMap<CountryForm, Country>();
+            CreateMap<CountryUpdate, Country>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
         }
     }
 }

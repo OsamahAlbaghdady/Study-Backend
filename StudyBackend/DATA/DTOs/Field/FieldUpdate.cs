@@ -7,9 +7,7 @@ namespace BackEndStructuer.DATA.DTOs.FieldForm
     {
         [Required]
         public string Name { get; set; }
-
-        [Required]
-        public long Price { get; set; }
+        
 
         [Required]
         public DateTime StartDate { get; set; }

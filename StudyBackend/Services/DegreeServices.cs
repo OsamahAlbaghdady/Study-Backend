@@ -48,7 +48,8 @@ public class DegreeServices : IDegreeServices
         var (degrees, totalCount) = await _repositoryWrapper.Degree.GetAll<DegreeDto>(
             x => 
                 (filter.Name == null || x.Name.Contains(filter.Name)) &&
-                (filter.CountryId == null || x.UniversityDegrees.Any(cd => cd.University.CountryId == filter.CountryId))
+                (filter.CountryId == null || x.UniversityDegrees.Any(cd => cd.University.CountryId == filter.CountryId)) &&
+                (filter.UniversityId == null || x.UniversityDegrees.Any(cd => cd.UniversityId == filter.UniversityId))
             ,
             filter.PageNumber, filter.PageSize
         );
@@ -74,6 +75,7 @@ public class DegreeServices : IDegreeServices
         }
 
         _mapper.Map(degreeUpdate, degree);
+        
         var res = await _repositoryWrapper.Degree.Update(degree);
         return res == null ? (null, "Error while updating degree") : (res, null);
     }

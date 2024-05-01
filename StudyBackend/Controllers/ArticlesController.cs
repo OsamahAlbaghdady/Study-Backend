@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace BackEndStructuer.Controllers
 {
     
-    [ServiceFilter(typeof(AuthorizeActionFilter))]
     public class ArticlesController : BaseController
     {
         private readonly IArticleServices _articleServices;
@@ -16,8 +15,9 @@ namespace BackEndStructuer.Controllers
         public ArticlesController(IArticleServices articleServices)
         {
             _articleServices = articleServices;
-        }
+            }
         
+     
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] BaseFilter filter)=> Ok(await _articleServices.GetAll(filter.PageNumber),filter.PageSize);
         

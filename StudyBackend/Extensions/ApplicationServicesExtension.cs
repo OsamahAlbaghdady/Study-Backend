@@ -16,7 +16,8 @@ namespace BackEndStructuer.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
-            services.AddDbContext<DataContext>(options => options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DataContext>(options =>
+                options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
             services.AddAutoMapper(typeof(UserMappingProfile).Assembly);
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
@@ -24,16 +25,25 @@ namespace BackEndStructuer.Extensions
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<AuthorizeActionFilter>();
-            
+
             // here to add
-services.AddScoped<ISettingServices, SettingServices>();
-services.AddScoped<IDegreeFieldServices, DegreeFieldServices>();
-services.AddScoped<IUniversityDegreeServices, UniversityDegreeServices>();
-services.AddScoped<IFieldServices, FieldServices>();
-services.AddScoped<IDegreeServices, DegreeServices>();
-services.AddScoped<IUniversityServices, UniversityServices>();
-services.AddScoped<ICountryServices, CountryServices>();
+            services.AddScoped<ISettingServices, SettingServices>();
+            services.AddScoped<IDegreeFieldServices, DegreeFieldServices>();
+            services.AddScoped<IUniversityDegreeServices, UniversityDegreeServices>();
+            services.AddScoped<IFieldServices, FieldServices>();
+            services.AddScoped<IDegreeServices, DegreeServices>();
+            services.AddScoped<IUniversityServices, UniversityServices>();
+            services.AddScoped<ICountryServices, CountryServices>();
+            services.AddScoped<DbInitializer>();
+
+            var serviceProvider = services.BuildServiceProvider();
             
+            
+            var permissionSeeder = serviceProvider.GetService<DbInitializer>();
+            permissionSeeder.Initialize(serviceProvider);
+
+          
+
 
 
             return services;

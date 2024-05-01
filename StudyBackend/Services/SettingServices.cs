@@ -1,4 +1,5 @@
 using AutoMapper;
+using BackEndStructuer.DATA;
 using BackEndStructuer.DATA.DTOs.SettingDto;
 using BackEndStructuer.DATA.DTOs.SettingFilter;
 using BackEndStructuer.DATA.DTOs.SettingForm;
@@ -6,50 +7,48 @@ using BackEndStructuer.DATA.DTOs.SettingUpdate;
 using BackEndStructuer.Entities;
 using BackEndStructuer.Repository;
 using BackEndStructuer.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackEndStructuer.Services;
 
 public interface ISettingServices
 {
-    Task<(List<SettingDto> settings, int? totalCount, string? error)> GetAll(SettingFilter filter);
-    Task<(Setting? setting, string? error)> Update(Guid id, SettingUpdate settingUpdate);
+    Task<(List<SettingDto> settings , int? totalCount, string? error)> GetAll();
+    Task<(Setting? setting, string? error)> Update(SettingUpdate settingUpdate);
     
 }
 
 public class SettingServices : ISettingServices
 {
     private readonly IMapper _mapper;
-    private readonly IRepositoryWrapper _repositoryWrapper;
+    private readonly DataContext _context;
 
     public SettingServices(
         IMapper mapper,
-        IRepositoryWrapper repositoryWrapper
+        DataContext context
     )
     {
         _mapper = mapper;
-        _repositoryWrapper = repositoryWrapper;
+        _context = context;
     }
 
 
  
-    public async Task<(List<SettingDto> settings, int? totalCount, string? error)> GetAll(SettingFilter filter)
+    public async Task<(List<SettingDto> settings , int? totalCount , string? error)> GetAll()
     {
-        var (settings, totalCount) = await _repositoryWrapper.Setting.GetAll(
-            filter.PageNumber,
-            filter.PageSize
-        );
-        var settingDtos = _mapper.Map<List<SettingDto>>(settings);
-        return (settingDtos, totalCount, null);
+        var settings = await _context.Settings
+            .Select(s => _mapper.Map<SettingDto>(s))
+            .ToListAsync();
+        return (settings, settings.Count, null);
     }
 
-    public async Task<(Setting? setting, string? error)> Update(Guid id, SettingUpdate settingUpdate)
+    public async Task<(Setting? setting, string? error)> Update(SettingUpdate settingUpdate)
     {
-        var setting = await _repositoryWrapper.Setting.Get(x => x.Id == id);
+        var setting = await _context.Settings.FirstOrDefaultAsync();
         if (setting == null) return (null, "Setting not found");
         setting = _mapper.Map(settingUpdate, setting);
-        await _repositoryWrapper.Setting.Update(setting);
+        await _context.SaveChangesAsync();
         return (setting, null);
-            
     }
 
    

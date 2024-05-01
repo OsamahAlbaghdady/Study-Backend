@@ -13,10 +13,10 @@ public interface IDegreeFieldServices
 {
     Task<(DegreeField? degreeField, string? error)> Create(DegreeFieldForm degreeFieldForm);
     Task<(List<DegreeFieldDto> degreeFields, int? totalCount, string? error)> GetAll(DegreeFieldFilter filter);
-    
+
     // get by id 
     Task<(DegreeFieldDto? degreeField, string? error)> GetById(Guid id);
-    
+
     Task<(DegreeField? degreeField, string? error)> Update(Guid id, DegreeFieldUpdate degreeFieldUpdate);
     Task<(DegreeField? degreeField, string? error)> Delete(Guid id);
 }
@@ -49,13 +49,15 @@ public class DegreeFieldServices : IDegreeFieldServices
     {
         var (degreeFields, totalCount) = await _repositoryWrapper.DegreeField.GetAll<DegreeFieldDto>(
             x => (filter.DegreeId == null || x.DegreeId == filter.DegreeId) &&
-                 (filter.FieldId == null || x.FieldId == filter.FieldId),
-            filter.PageNumber, filter.PageSize
+                 (filter.FieldId == null || x.FieldId == filter.FieldId) &&
+                 (filter.CountryId == null || x.Degree.UniversityDegrees.Any(y => y.University.CountryId == filter.CountryId)) &&
+                 (filter.UniversityId == null || x.UniversityId == filter.UniversityId),
+        filter.PageNumber, filter.PageSize
         );
 
         return (degreeFields, totalCount, null);
     }
-    
+
     public async Task<(DegreeFieldDto? degreeField, string? error)> GetById(Guid id)
     {
         var degreeField = await _repositoryWrapper.DegreeField.Get<DegreeFieldDto>(
