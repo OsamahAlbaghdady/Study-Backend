@@ -12,7 +12,6 @@ namespace BackEndStructuer.Repository
         private readonly IMapper _mapper;
 
         private IUserRepository _user;  
-        private IArticleRespository _articles;
         private IPermissionRepository _permission;
         private IRoleRepository _role;
         
@@ -33,13 +32,7 @@ namespace BackEndStructuer.Repository
         } }
 
 
-        public IArticleRespository Article {  get {
-            if(_articles == null)
-            {
-                _articles = new ArticleRepository(_context,_mapper);
-            }
-            return _articles;
-        } }
+ 
 
         
         public IUserRepository User {  get {

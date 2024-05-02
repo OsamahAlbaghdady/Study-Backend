@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace BackEndStructuer.Migrations
+namespace StudyBackend.Migrations
 {
     /// <inheritdoc />
     public partial class Init : Migration
@@ -13,29 +13,13 @@ namespace BackEndStructuer.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Articles",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Title = table.Column<string>(type: "text", nullable: true),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Articles", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Countries",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: true),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -50,7 +34,7 @@ namespace BackEndStructuer.Migrations
                     Name = table.Column<string>(type: "text", nullable: true),
                     VideoUrl = table.Column<string>(type: "text", nullable: true),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -63,11 +47,8 @@ namespace BackEndStructuer.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: true),
-                    Price = table.Column<long>(type: "bigint", nullable: true),
-                    StartDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
-                    EndDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -82,7 +63,7 @@ namespace BackEndStructuer.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     PermissionName = table.Column<string>(type: "text", nullable: false),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -97,11 +78,28 @@ namespace BackEndStructuer.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Settings",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    WelcomeMessage = table.Column<string>(type: "text", nullable: true),
+                    WelcomeVideoUrl = table.Column<string>(type: "text", nullable: true),
+                    ContactWhatsApp = table.Column<string>(type: "text", nullable: true),
+                    ContactTelegram = table.Column<string>(type: "text", nullable: true),
+                    Deleted = table.Column<bool>(type: "boolean", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Settings", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -112,7 +110,7 @@ namespace BackEndStructuer.Migrations
                     Name = table.Column<string>(type: "text", nullable: true),
                     CountryId = table.Column<Guid>(type: "uuid", nullable: true),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -121,31 +119,6 @@ namespace BackEndStructuer.Migrations
                         name: "FK_Universities_Countries_CountryId",
                         column: x => x.CountryId,
                         principalTable: "Countries",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "DegreeFields",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    DegreeId = table.Column<Guid>(type: "uuid", nullable: true),
-                    FieldId = table.Column<Guid>(type: "uuid", nullable: true),
-                    Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_DegreeFields", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_DegreeFields_Degrees_DegreeId",
-                        column: x => x.DegreeId,
-                        principalTable: "Degrees",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_DegreeFields_Fields_FieldId",
-                        column: x => x.FieldId,
-                        principalTable: "Fields",
                         principalColumn: "Id");
                 });
 
@@ -183,7 +156,7 @@ namespace BackEndStructuer.Migrations
                     Password = table.Column<string>(type: "text", nullable: true),
                     RoleId = table.Column<int>(type: "integer", nullable: true),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -196,6 +169,40 @@ namespace BackEndStructuer.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "DegreeFields",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    DegreeId = table.Column<Guid>(type: "uuid", nullable: true),
+                    FieldId = table.Column<Guid>(type: "uuid", nullable: true),
+                    Price = table.Column<long>(type: "bigint", nullable: true),
+                    StartDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    EndDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    UniversityId = table.Column<Guid>(type: "uuid", nullable: true),
+                    Deleted = table.Column<bool>(type: "boolean", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DegreeFields", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_DegreeFields_Degrees_DegreeId",
+                        column: x => x.DegreeId,
+                        principalTable: "Degrees",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_DegreeFields_Fields_FieldId",
+                        column: x => x.FieldId,
+                        principalTable: "Fields",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_DegreeFields_Universities_UniversityId",
+                        column: x => x.UniversityId,
+                        principalTable: "Universities",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "UniversityDegrees",
                 columns: table => new
                 {
@@ -203,7 +210,7 @@ namespace BackEndStructuer.Migrations
                     UniversityId = table.Column<Guid>(type: "uuid", nullable: true),
                     DegreeId = table.Column<Guid>(type: "uuid", nullable: true),
                     Deleted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true)
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -229,6 +236,11 @@ namespace BackEndStructuer.Migrations
                 name: "IX_DegreeFields_FieldId",
                 table: "DegreeFields",
                 column: "FieldId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DegreeFields_UniversityId",
+                table: "DegreeFields",
+                column: "UniversityId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_RolePermissions_PermissionId",
@@ -260,13 +272,13 @@ namespace BackEndStructuer.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Articles");
-
-            migrationBuilder.DropTable(
                 name: "DegreeFields");
 
             migrationBuilder.DropTable(
                 name: "RolePermissions");
+
+            migrationBuilder.DropTable(
+                name: "Settings");
 
             migrationBuilder.DropTable(
                 name: "UniversityDegrees");

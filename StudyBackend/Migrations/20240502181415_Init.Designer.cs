@@ -9,11 +9,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace BackEndStructuer.Migrations
+namespace StudyBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240430170931_OldInit")]
-    partial class OldInit
+    [Migration("20240502181415_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,7 +32,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -56,31 +56,6 @@ namespace BackEndStructuer.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("BackEndStructuer.Entities.Article", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("boolean");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Articles");
-                });
-
             modelBuilder.Entity("BackEndStructuer.Entities.Country", b =>
                 {
                     b.Property<Guid>("Id")
@@ -88,7 +63,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -108,7 +83,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -131,7 +106,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<Guid?>("DegreeId")
                         .HasColumnType("uuid");
@@ -139,17 +114,28 @@ namespace BackEndStructuer.Migrations
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
 
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<Guid?>("FieldId")
                         .HasColumnType("uuid");
 
                     b.Property<long?>("Price")
                         .HasColumnType("bigint");
 
+                    b.Property<DateTime?>("StartDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid?>("UniversityId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
 
                     b.HasIndex("DegreeId");
 
                     b.HasIndex("FieldId");
+
+                    b.HasIndex("UniversityId");
 
                     b.ToTable("DegreeFields");
                 });
@@ -161,19 +147,13 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
 
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("timestamp without time zone");
-
                     b.Property<string>("Name")
                         .HasColumnType("text");
-
-                    b.Property<DateTime?>("StartDate")
-                        .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
@@ -189,7 +169,7 @@ namespace BackEndStructuer.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -212,7 +192,7 @@ namespace BackEndStructuer.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -254,7 +234,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("text");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -280,7 +260,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("Deleted")
                         .HasColumnType("boolean");
@@ -302,7 +282,7 @@ namespace BackEndStructuer.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("CreationDate")
-                        .HasColumnType("timestamp without time zone");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<Guid?>("DegreeId")
                         .HasColumnType("uuid");
@@ -341,9 +321,15 @@ namespace BackEndStructuer.Migrations
                         .WithMany("DegreeFields")
                         .HasForeignKey("FieldId");
 
+                    b.HasOne("BackEndStructuer.Entities.University", "University")
+                        .WithMany()
+                        .HasForeignKey("UniversityId");
+
                     b.Navigation("Degree");
 
                     b.Navigation("Field");
+
+                    b.Navigation("University");
                 });
 
             modelBuilder.Entity("BackEndStructuer.Entities.RolePermission", b =>

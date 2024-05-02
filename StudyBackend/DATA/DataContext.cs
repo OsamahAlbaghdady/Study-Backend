@@ -17,7 +17,6 @@ namespace BackEndStructuer.DATA
         public DbSet<RolePermission> RolePermissions { get; set; }
 
  
-        public DbSet<Article> Articles { get; set; }
         
         public DbSet<Country> Countries { get; set; }
         public DbSet<Degree> Degrees { get; set; }

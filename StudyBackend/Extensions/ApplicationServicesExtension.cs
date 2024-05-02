@@ -21,7 +21,6 @@ namespace BackEndStructuer.Extensions
             services.AddAutoMapper(typeof(UserMappingProfile).Assembly);
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
-            services.AddScoped<IArticleServices, ArticleService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<AuthorizeActionFilter>();

@@ -34,12 +34,7 @@ namespace BackEndStructuer.Helpers
     {
         public UserMappingProfile()
         {
-            CreateMap<Article, ArticleDto>();
-            CreateMap<ArticleForm, Article>()
-                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
-            CreateMap<ArticleUpdate, Article>()
-                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
-
+          
 
             CreateMap<AppUser, UserDto>()
                 .ForMember(r => r.Role, src => src.MapFrom(src => src.Role.Name));
