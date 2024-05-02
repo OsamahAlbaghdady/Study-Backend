@@ -8,6 +8,10 @@ namespace BackEndStructuer.DATA.DTOs.DegreeField
         
         public long? Price { get; set; }
         
+        public DateTime? StartDate { get; set; }
+        
+        public DateTime? EndDate { get; set; }
+        
         public Guid? UniversityId { get; set; }
         
         public string? UniversityName { get; set; }

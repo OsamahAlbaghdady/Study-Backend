@@ -34,6 +34,7 @@ namespace BackEndStructuer.Extensions
             services.AddScoped<IDegreeServices, DegreeServices>();
             services.AddScoped<IUniversityServices, UniversityServices>();
             services.AddScoped<ICountryServices, CountryServices>();
+            services.AddScoped<IFileService, FileService>();
             services.AddScoped<DbInitializer>();
 
             var serviceProvider = services.BuildServiceProvider();

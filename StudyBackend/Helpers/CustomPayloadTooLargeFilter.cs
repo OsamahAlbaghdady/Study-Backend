@@ -28,6 +28,6 @@ namespace BackEndStructuer.Helpers
         }
 
         // Adjust this value to set the maximum payload size in bytes
-        private const long MaximumPayloadSize = 10 * 1024 * 1024; // 10 MB
+        private const long MaximumPayloadSize = 2000 * 1024 * 1024; // 10 MB
     }
 }

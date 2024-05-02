@@ -13,5 +13,8 @@ namespace BackEndStructuer.DATA.DTOs.DegreeFieldFilter
             public Guid? UniversityId { get; set; }
             
             
+            public DateTime? StartDate { get; set; }
+        
+            public DateTime? EndDate { get; set; }
     }
 }

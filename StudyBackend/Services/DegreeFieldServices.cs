@@ -50,7 +50,9 @@ public class DegreeFieldServices : IDegreeFieldServices
         var (degreeFields, totalCount) = await _repositoryWrapper.DegreeField.GetAll<DegreeFieldDto>(
             x => (filter.DegreeId == null || x.DegreeId == filter.DegreeId) &&
                  (filter.FieldId == null || x.FieldId == filter.FieldId) &&
-                 (filter.CountryId == null || x.Degree.UniversityDegrees.Any(y => y.University.CountryId == filter.CountryId)) &&
+                 (filter.CountryId == null || x.University.CountryId ==  filter.CountryId) &&
+                 (filter.StartDate == null || x.StartDate >= filter.StartDate ) && 
+                 (filter.EndDate == null || x.EndDate <= filter.EndDate ) &&
                  (filter.UniversityId == null || x.UniversityId == filter.UniversityId),
         filter.PageNumber, filter.PageSize
         );
