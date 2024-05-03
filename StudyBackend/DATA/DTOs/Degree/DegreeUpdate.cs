@@ -9,6 +9,6 @@ namespace BackEndStructuer.DATA.DTOs.DegreeForm
         [Required]
         public string Name { get; set; }
 
-        public FileForm Video { get; set; }
+        public string? VideoUrl { get; set; }
     }
 }
