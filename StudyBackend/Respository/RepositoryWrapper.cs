@@ -54,6 +54,16 @@ namespace BackEndStructuer.Repository
         
         
         // here to add
+private IQuestionRepository _Question;
+
+public IQuestionRepository Question {
+    get {
+        if(_Question == null) {
+            _Question = new QuestionRepository(_context, _mapper);
+        }
+        return _Question;
+    }
+}
 private ISettingRepository _Setting;
 
 public ISettingRepository Setting {

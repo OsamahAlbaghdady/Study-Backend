@@ -103,6 +103,27 @@ namespace StudyBackend.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Questions",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    QuestionTitle = table.Column<string>(type: "text", nullable: true),
+                    QuestionAnswer = table.Column<string>(type: "text", nullable: true),
+                    CountryId = table.Column<Guid>(type: "uuid", nullable: true),
+                    Deleted = table.Column<bool>(type: "boolean", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Questions", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Questions_Countries_CountryId",
+                        column: x => x.CountryId,
+                        principalTable: "Countries",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Universities",
                 columns: table => new
                 {
@@ -243,6 +264,11 @@ namespace StudyBackend.Migrations
                 column: "UniversityId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Questions_CountryId",
+                table: "Questions",
+                column: "CountryId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_RolePermissions_PermissionId",
                 table: "RolePermissions",
                 column: "PermissionId");
@@ -273,6 +299,9 @@ namespace StudyBackend.Migrations
         {
             migrationBuilder.DropTable(
                 name: "DegreeFields");
+
+            migrationBuilder.DropTable(
+                name: "Questions");
 
             migrationBuilder.DropTable(
                 name: "RolePermissions");

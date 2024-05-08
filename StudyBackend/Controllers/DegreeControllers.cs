@@ -32,7 +32,7 @@ namespace BackEndStructuer.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<ActionResult<Degree>> Create([FromBody] DegreeForm degreeForm) => Ok(await _degreeServices.Create(degreeForm));
+        public async Task<ActionResult<Degree>> Create([FromForm] DegreeForm degreeForm) => Ok(await _degreeServices.Create(degreeForm));
 
         [Authorize]
         [HttpPut("{id}")]

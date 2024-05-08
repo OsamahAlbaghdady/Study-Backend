@@ -11,6 +11,7 @@ namespace BackEndStructuer.Repository
         IRoleRepository Role { get; }
 
         // here to add
+IQuestionRepository Question{get;}
 ISettingRepository Setting{get;}
 IDegreeFieldRepository DegreeField{get;}
 IUniversityDegreeRepository UniversityDegree{get;}

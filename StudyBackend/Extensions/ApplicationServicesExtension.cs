@@ -26,6 +26,7 @@ namespace BackEndStructuer.Extensions
             services.AddScoped<AuthorizeActionFilter>();
 
             // here to add
+services.AddScoped<IQuestionServices, QuestionServices>();
             services.AddScoped<ISettingServices, SettingServices>();
             services.AddScoped<IDegreeFieldServices, DegreeFieldServices>();
             services.AddScoped<IUniversityDegreeServices, UniversityDegreeServices>();

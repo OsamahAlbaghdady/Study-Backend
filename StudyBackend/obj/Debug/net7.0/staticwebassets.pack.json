@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
+      "PackagePath": "staticwebassets\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.StudyBackend.props",
+      "PackagePath": "build\\StudyBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.StudyBackend.props",
+      "PackagePath": "buildMultiTargeting\\StudyBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.StudyBackend.props",
+      "PackagePath": "buildTransitive\\StudyBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

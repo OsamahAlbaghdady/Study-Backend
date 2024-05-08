@@ -6,6 +6,9 @@ using BackEndStructuer.DATA.DTOs.User;
 using BackEndStructuer.Entities;
 using OneSignalApi.Model;
 // here to implement
+using BackEndStructuer.DATA.DTOs.QuestionDto;
+using BackEndStructuer.DATA.DTOs.QuestionForm;
+using BackEndStructuer.DATA.DTOs.QuestionUpdate;
 using BackEndStructuer.DATA.DTOs.SettingDto;
 using BackEndStructuer.DATA.DTOs.SettingForm;
 using BackEndStructuer.DATA.DTOs.SettingUpdate;
@@ -47,6 +50,9 @@ namespace BackEndStructuer.Helpers
 
 
             // here to add
+CreateMap<Question, QuestionDto>();
+CreateMap<QuestionForm,Question>();
+CreateMap<QuestionUpdate,Question>();
             CreateMap<Setting, SettingDto>();
             CreateMap<SettingForm, Setting>();
             CreateMap<SettingUpdate, Setting>()

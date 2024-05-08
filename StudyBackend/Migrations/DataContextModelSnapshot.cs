@@ -180,6 +180,34 @@ namespace StudyBackend.Migrations
                     b.ToTable("Permissions");
                 });
 
+            modelBuilder.Entity("BackEndStructuer.Entities.Question", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("CountryId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("CreationDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("QuestionAnswer")
+                        .HasColumnType("text");
+
+                    b.Property<string>("QuestionTitle")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("Questions");
+                });
+
             modelBuilder.Entity("BackEndStructuer.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -327,6 +355,15 @@ namespace StudyBackend.Migrations
                     b.Navigation("Field");
 
                     b.Navigation("University");
+                });
+
+            modelBuilder.Entity("BackEndStructuer.Entities.Question", b =>
+                {
+                    b.HasOne("BackEndStructuer.Entities.Country", "Country")
+                        .WithMany()
+                        .HasForeignKey("CountryId");
+
+                    b.Navigation("Country");
                 });
 
             modelBuilder.Entity("BackEndStructuer.Entities.RolePermission", b =>

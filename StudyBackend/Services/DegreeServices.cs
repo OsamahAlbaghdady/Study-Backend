@@ -3,6 +3,7 @@ using BackEndStructuer.DATA.DTOs.DegreeDto;
 using BackEndStructuer.DATA.DTOs.DegreeFilter;
 using BackEndStructuer.DATA.DTOs.DegreeForm;
 using BackEndStructuer.DATA.DTOs.DegreeUpdate;
+using BackEndStructuer.DATA.DTOs.File;
 using BackEndStructuer.Entities;
 using BackEndStructuer.Repository;
 using BackEndStructuer.Services;
@@ -41,7 +42,13 @@ public class DegreeServices : IDegreeServices
 
     public async Task<(Degree? degree, string? error)> Create(DegreeForm degreeForm)
     {
+        var (file , error) = await _fileService.Upload(degreeForm.Video);
+        if (error != null)
+        {
+            return (null, error);
+        }
         var degree = _mapper.Map<Degree>(degreeForm);
+        degree.VideoUrl = file;
         var res = await _repositoryWrapper.Degree.Add(degree);
         return res == null ? (null, "Error while creation degree") : (res, null);
     }

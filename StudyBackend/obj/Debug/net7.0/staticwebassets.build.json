@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k8VdprnS7fXSguio2iHZX1C/KqsAJJmlavuhOd8b8RE=",
+  "Hash": "EVGPr0UfSq5HsXtr3OqiYsqycIYNi9xiFaTlEEB6dz8=",
   "Source": "StudyBackend",
   "BasePath": "_content/StudyBackend",
   "Mode": "Default",
@@ -15,5 +15,25 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
+      "SourceId": "StudyBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
+      "BasePath": "_content/StudyBackend",
+      "RelativePath": "Attachments/c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe"
+    }
+  ]
 }

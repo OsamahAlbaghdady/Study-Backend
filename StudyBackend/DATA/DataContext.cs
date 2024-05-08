@@ -25,9 +25,9 @@ namespace BackEndStructuer.DATA
         public DbSet<UniversityDegree> UniversityDegrees { get; set; }
         public DbSet<University> Universities { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<Question> Questions { get; set; }
         
 
-        
         // here to add
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
