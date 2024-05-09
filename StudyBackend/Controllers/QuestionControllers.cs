@@ -23,7 +23,6 @@ namespace BackEndStructuer.Controllers
             _questionServices = questionServices;
         }
 
-        [Authorize]
         [HttpGet]
         public async Task<ActionResult<List<QuestionDto>>> GetAll([FromQuery] QuestionFilter filter) => Ok(await _questionServices.GetAll(filter) , filter.PageNumber);
 
