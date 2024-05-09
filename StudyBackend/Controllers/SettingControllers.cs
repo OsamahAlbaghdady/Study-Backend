@@ -24,14 +24,14 @@ namespace BackEndStructuer.Controllers
             _settingServices = settingServices;
         }
 
-        [Authorize]
+
         [HttpGet]
         public async Task<ActionResult<Respons<SettingDto>>> GetAll([FromQuery] SettingFilter filter) => Ok(await _settingServices.GetAll() , filter.PageNumber);
 
    
         [Authorize]
         [HttpPut("{id}")]
-        public async Task<ActionResult<Setting>> Update([FromBody] SettingUpdate settingUpdate) => Ok(await _settingServices.Update(settingUpdate));
+        public async Task<ActionResult<Setting>> Update([FromForm] SettingUpdate settingUpdate) => Ok(await _settingServices.Update(settingUpdate));
 
      
     }

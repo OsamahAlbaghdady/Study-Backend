@@ -22,14 +22,17 @@ public class SettingServices : ISettingServices
 {
     private readonly IMapper _mapper;
     private readonly DataContext _context;
+    private readonly IFileService _fileService;
 
     public SettingServices(
         IMapper mapper,
-        DataContext context
+        DataContext context ,
+        IFileService fileService
     )
     {
         _mapper = mapper;
         _context = context;
+        _fileService = fileService;
     }
 
 
@@ -46,7 +49,19 @@ public class SettingServices : ISettingServices
     {
         var setting = await _context.Settings.FirstOrDefaultAsync();
         if (setting == null) return (null, "Setting not found");
+        string? file = null; 
+        if (settingUpdate.WelcomeVideoUrl != null)
+        {
+            var (uploadedFile, error) = await _fileService.Upload(settingUpdate.WelcomeVideoUrl);
+            if (error != null)
+            {
+                return (null, error);
+            }
+            file = uploadedFile;
+        }
+        
         setting = _mapper.Map(settingUpdate, setting);
+        if (file != null) setting.WelcomeVideoUrl = file;
         await _context.SaveChangesAsync();
         return (setting, null);
     }
