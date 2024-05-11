@@ -53,6 +53,7 @@ namespace BackEndStructuer.Helpers
 CreateMap<Question, QuestionDto>();
 CreateMap<QuestionForm,Question>();
 CreateMap<QuestionUpdate,Question>();
+
             CreateMap<Setting, SettingDto>();
             CreateMap<SettingForm, Setting>();
             CreateMap<SettingUpdate, Setting>()
@@ -64,6 +65,7 @@ CreateMap<QuestionUpdate,Question>();
                 .ForMember(r => r.Field, src => src.MapFrom(src => src.Field))
                 .ForMember(r => r.UniversityName, src => src.MapFrom(src => src.University.Name))
                 .ForMember(r => r.CountryName, src => src.MapFrom(src => src.University.Country.Name))
+                .ForMember(r => r.IsValid, src => src.MapFrom(src => src.EndDate > DateTime.UtcNow))
                 ;
 
 

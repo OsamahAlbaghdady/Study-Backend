@@ -21,5 +21,7 @@ namespace BackEndStructuer.DATA.DTOs.DegreeField
         
         public string? CountryName { get; set; }
 
+        public bool? IsValid { get; set; }
+
     }
 }

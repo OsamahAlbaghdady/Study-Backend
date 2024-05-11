@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OYXpLVRemDsMQT86mGjNalKZMpPwEe2+MW1zh51UgBs=",
+  "Hash": "EVGPr0UfSq5HsXtr3OqiYsqycIYNi9xiFaTlEEB6dz8=",
   "Source": "StudyBackend",
   "BasePath": "_content/StudyBackend",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\697fd8fc-84e5-4d83-a660-2b5a78b50ff3.mp4",
-      "SourceId": "StudyBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
-      "BasePath": "_content/StudyBackend",
-      "RelativePath": "Attachments/697fd8fc-84e5-4d83-a660-2b5a78b50ff3.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\697fd8fc-84e5-4d83-a660-2b5a78b50ff3.mp4"
-    },
-    {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\b861b31f-09ca-4961-9519-378983beb3f6.mp4",
-      "SourceId": "StudyBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
-      "BasePath": "_content/StudyBackend",
-      "RelativePath": "Attachments/b861b31f-09ca-4961-9519-378983beb3f6.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\b861b31f-09ca-4961-9519-378983beb3f6.mp4"
-    },
     {
       "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
       "SourceId": "StudyBackend",
@@ -72,25 +34,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe"
-    },
-    {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\ffd4c2ea-d92a-46cb-bb4d-aa1785ca2ac8.mp4",
-      "SourceId": "StudyBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
-      "BasePath": "_content/StudyBackend",
-      "RelativePath": "Attachments/ffd4c2ea-d92a-46cb-bb4d-aa1785ca2ac8.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\ffd4c2ea-d92a-46cb-bb4d-aa1785ca2ac8.mp4"
     }
   ]
 }

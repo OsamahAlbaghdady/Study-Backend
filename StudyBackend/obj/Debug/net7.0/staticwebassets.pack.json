@@ -1,20 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\697fd8fc-84e5-4d83-a660-2b5a78b50ff3.mp4",
-      "PackagePath": "staticwebassets\\Attachments\\697fd8fc-84e5-4d83-a660-2b5a78b50ff3.mp4"
-    },
-    {
-      "Id": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\b861b31f-09ca-4961-9519-378983beb3f6.mp4",
-      "PackagePath": "staticwebassets\\Attachments\\b861b31f-09ca-4961-9519-378983beb3f6.mp4"
-    },
-    {
       "Id": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
       "PackagePath": "staticwebassets\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe"
-    },
-    {
-      "Id": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\ffd4c2ea-d92a-46cb-bb4d-aa1785ca2ac8.mp4",
-      "PackagePath": "staticwebassets\\Attachments\\ffd4c2ea-d92a-46cb-bb4d-aa1785ca2ac8.mp4"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props",
