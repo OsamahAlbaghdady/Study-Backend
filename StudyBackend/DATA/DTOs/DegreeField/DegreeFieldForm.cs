@@ -6,23 +6,17 @@ namespace BackEndStructuer.DATA.DTOs.DegreeFieldUpdate
     public class DegreeFieldUpdate
     {
             
-            [Required]
-            public Guid DegreeId { get; set; }
+            public Guid? DegreeId { get; set; }
             
-            [Required]
-            public Guid FieldId { get; set; }
+            public Guid? FieldId { get; set; }
             
-            [Required]
             public long? Price { get; set; }
             
-            [Required]
-            public Guid UniversityId { get; set; }
+            public Guid? UniversityId { get; set; }
             
-            [Required]
-            public DateTime StartDate { get; set; }
+            public DateTime? StartDate { get; set; }
         
-            [Required]
-            public DateTime EndDate { get; set; }
+            public DateTime? EndDate { get; set; }
             
             
     }

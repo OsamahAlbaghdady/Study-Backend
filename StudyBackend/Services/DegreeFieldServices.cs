@@ -38,7 +38,16 @@ public class DegreeFieldServices : IDegreeFieldServices
 
     public async Task<(DegreeField? degreeField, string? error)> Create(DegreeFieldForm degreeFieldForm)
     {
-        var degreeField = _mapper.Map<DegreeField>(degreeFieldForm);
+
+        var degreeField = new DegreeField()
+        {
+            EndDate =  degreeFieldForm.EndDate.ToUniversalTime() ,
+            StartDate = degreeFieldForm.StartDate.ToUniversalTime(),
+            DegreeId = degreeFieldForm.DegreeId,
+            FieldId = degreeFieldForm.FieldId,
+            Price = degreeFieldForm.Price,
+            UniversityId = degreeFieldForm.UniversityId
+        };
         var result = await _repositoryWrapper.DegreeField.Add(degreeField);
         if (result == null) return (null, "Error in creating degreeField");
         return (result, null);
@@ -51,8 +60,8 @@ public class DegreeFieldServices : IDegreeFieldServices
             x => (filter.DegreeId == null || x.DegreeId == filter.DegreeId) &&
                  (filter.FieldId == null || x.FieldId == filter.FieldId) &&
                  (filter.CountryId == null || x.University.CountryId ==  filter.CountryId) &&
-                 (filter.StartDate == null || x.StartDate >= filter.StartDate ) && 
-                 (filter.EndDate == null || x.EndDate <= filter.EndDate ) &&
+                 (filter.StartDate == null || x.StartDate.Value.ToUniversalTime() >= filter.StartDate.Value.ToUniversalTime() ) && 
+                 (filter.EndDate == null || x.EndDate.Value.ToUniversalTime() <= filter.EndDate.Value.ToUniversalTime() ) &&
                  (filter.UniversityId == null || x.UniversityId == filter.UniversityId),
         filter.PageNumber, filter.PageSize
         );
