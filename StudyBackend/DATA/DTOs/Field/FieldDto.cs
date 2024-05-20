@@ -7,6 +7,7 @@ namespace BackEndStructuer.DATA.DTOs.FieldDto
         public string? Name { get; set; }
         
      
+        public bool? Priority { get; set; } = false;
 
     }
 }

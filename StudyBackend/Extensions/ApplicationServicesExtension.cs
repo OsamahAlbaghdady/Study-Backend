@@ -5,6 +5,7 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using BackEndStructuer.DATA;
+using BackEndStructuer.Entities;
 using BackEndStructuer.Helpers;
 using BackEndStructuer.Helpers.OneSignal;
 using BackEndStructuer.Repository;
@@ -26,6 +27,8 @@ namespace BackEndStructuer.Extensions
             services.AddScoped<AuthorizeActionFilter>();
 
             // here to add
+            services.AddScoped<IMedicalFieldService ,MedicalFieldService>();
+            
 services.AddScoped<IQuestionServices, QuestionServices>();
             services.AddScoped<ISettingServices, SettingServices>();
             services.AddScoped<IDegreeFieldServices, DegreeFieldServices>();

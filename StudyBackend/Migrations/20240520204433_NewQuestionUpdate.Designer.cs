@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace StudyBackend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240513163045_Init")]
-    partial class Init
+    [Migration("20240520204433_NewQuestionUpdate")]
+    partial class NewQuestionUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -155,9 +155,35 @@ namespace StudyBackend.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
+                    b.Property<bool?>("Priority")
+                        .HasColumnType("boolean");
+
                     b.HasKey("Id");
 
                     b.ToTable("Fields");
+                });
+
+            modelBuilder.Entity("BackEndStructuer.Entities.MedicalField", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("CreationDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("VideoUrl")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MedicalFields");
                 });
 
             modelBuilder.Entity("BackEndStructuer.Entities.Permission", b =>
@@ -202,6 +228,9 @@ namespace StudyBackend.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("QuestionTitle")
+                        .HasColumnType("text");
+
+                    b.Property<string>("VideoUrl")
                         .HasColumnType("text");
 
                     b.HasKey("Id");

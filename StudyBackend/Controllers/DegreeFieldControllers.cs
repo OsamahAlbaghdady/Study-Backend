@@ -11,6 +11,7 @@ using BackEndStructuer.DATA.DTOs.DegreeFieldUpdate;
 using BackEndStructuer.Entities;
 using System.Threading.Tasks;
 using BackEndStructuer.DATA.DTOs.DegreeField;
+using StudyBackend.DATA.DTOs.DegreeField;
 
 namespace BackEndStructuer.Controllers
 {
@@ -34,11 +35,21 @@ namespace BackEndStructuer.Controllers
         [Authorize]
         [HttpPost]
         public async Task<ActionResult<DegreeField>> Create([FromBody] DegreeFieldForm degreefieldForm) => Ok(await _degreefieldServices.Create(degreefieldForm));
+        
+        [Authorize]
+        [HttpPost("multi")]
+        public async Task<ActionResult<List<DegreeField>>> Create([FromBody] List<DegreeFieldForm> degreefieldForms) => Ok(await _degreefieldServices.Create(degreefieldForms));
+        
 
         [Authorize]
         [HttpPut("{id}")]
         public async Task<ActionResult<DegreeField>> Update([FromBody] DegreeFieldUpdate degreefieldUpdate, Guid id) => Ok(await _degreefieldServices.Update(id , degreefieldUpdate));
 
+        
+        [Authorize]
+        [HttpPut("multi")]
+        public async Task<ActionResult<List<DegreeField>>> Update([FromBody] List<DegreeFieldMultiUpdate> degreefieldUpdates) => Ok(await _degreefieldServices.Update(degreefieldUpdates));
+        
         [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult<DegreeField>> Delete(Guid id) =>  Ok( await _degreefieldServices.Delete(id));

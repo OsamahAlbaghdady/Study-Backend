@@ -8,10 +8,13 @@ namespace BackEndStructuer.DATA.DTOs.QuestionUpdate
         [Required]
         public string QuestionTitle { get; set; }
         
-        [Required]
-        public string QuestionAnswer { get; set; }
+        public string? QuestionAnswer { get; set; }
 
         [Required]
         public Guid CountryId { get; set; }
+
+
+        public IFormFile? Video { get; set; }
+        
     }
 }

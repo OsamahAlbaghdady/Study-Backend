@@ -6,6 +6,8 @@ namespace BackEndStructuer.DATA.DTOs.FieldFilter
         public string? Name { get; set; }
 
         public Guid? DegreeId  { get; set; }
-      
+        
+        public bool? Priority { get; set; } = false;
+
     }
 }

@@ -10,5 +10,7 @@ namespace BackEndStructuer.Entities
         public Guid? CountryId { get; set; }
 
         public Country? Country { get; set; }
+
+        public string? VideoUrl { get; set; }
     }
 }

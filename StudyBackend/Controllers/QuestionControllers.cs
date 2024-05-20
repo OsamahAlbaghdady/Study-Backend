@@ -28,11 +28,11 @@ namespace BackEndStructuer.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<ActionResult<Question>> Create([FromBody] QuestionForm questionForm) => Ok(await _questionServices.Create(questionForm));
+        public async Task<ActionResult<Question>> Create([FromForm] QuestionForm questionForm) => Ok(await _questionServices.Create(questionForm));
 
         [Authorize]
         [HttpPut("{id}")]
-        public async Task<ActionResult<Question>> Update([FromBody] QuestionUpdate questionUpdate, Guid id) => Ok(await _questionServices.Update(id , questionUpdate));
+        public async Task<ActionResult<Question>> Update([FromForm] QuestionUpdate questionUpdate, Guid id) => Ok(await _questionServices.Update(id , questionUpdate));
 
         [Authorize]
         [HttpDelete("{id}")]

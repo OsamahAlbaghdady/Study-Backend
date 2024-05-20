@@ -21,14 +21,17 @@ public class QuestionServices : IQuestionServices
 {
     private readonly IMapper _mapper;
     private readonly IRepositoryWrapper _repositoryWrapper;
+    private readonly IFileService _fileService;
 
     public QuestionServices(
         IMapper mapper,
-        IRepositoryWrapper repositoryWrapper
+        IRepositoryWrapper repositoryWrapper , 
+        IFileService fileService
     )
     {
         _mapper = mapper;
         _repositoryWrapper = repositoryWrapper;
+        _fileService = fileService;
     }
 
 
@@ -39,6 +42,16 @@ public class QuestionServices : IQuestionServices
         if (country == null)
         {
             return (null, "Country not found");
+        }
+        
+        if (questionForm.Video != null)
+        {
+            var (videoUrl , error) = await _fileService.Upload(questionForm.Video);
+            if (error != null)
+            {
+                return (null, error);
+            }
+            question.VideoUrl = videoUrl;
         }
 
         var result = await _repositoryWrapper.Question.Add(question);
@@ -64,6 +77,17 @@ public class QuestionServices : IQuestionServices
     {
         var question = await _repositoryWrapper.Question.Get(x => x.Id == id);
         _mapper.Map(questionUpdate, question);
+
+        if (questionUpdate.Video != null)
+        {
+            var (file, error) = await _fileService.Upload(questionUpdate.Video);
+            if (error != null)
+            {
+                return (null, error);
+            } 
+            question.VideoUrl = file;
+        }
+        
         var result = await _repositoryWrapper.Question.Update(question);
         if (result == null)
         {

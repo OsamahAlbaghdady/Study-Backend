@@ -30,6 +30,7 @@ using BackEndStructuer.DATA.DTOs.CountryDto;
 using BackEndStructuer.DATA.DTOs.CountryForm;
 using BackEndStructuer.DATA.DTOs.CountryUpdate;
 using BackEndStructuer.DATA.DTOs.DegreeField;
+using BackEndStructuer.DATA.DTOs.MedicalFeild;
 
 namespace BackEndStructuer.Helpers
 {
@@ -37,8 +38,6 @@ namespace BackEndStructuer.Helpers
     {
         public UserMappingProfile()
         {
-          
-
             CreateMap<AppUser, UserDto>()
                 .ForMember(r => r.Role, src => src.MapFrom(src => src.Role.Name));
             CreateMap<RegisterForm, App>()
@@ -50,9 +49,16 @@ namespace BackEndStructuer.Helpers
 
 
             // here to add
-CreateMap<Question, QuestionDto>();
-CreateMap<QuestionForm,Question>();
-CreateMap<QuestionUpdate,Question>();
+            CreateMap<Question, QuestionDto>();
+            CreateMap<QuestionForm, Question>();
+            CreateMap<QuestionUpdate, Question>();
+
+
+            CreateMap<MedicalField, MedicalFieldDto>();
+            CreateMap<MedicalFieldForm, MedicalField>();
+            CreateMap<MedicalFieldUpdate, MedicalField>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null))
+                ;
 
             CreateMap<Setting, SettingDto>();
             CreateMap<SettingForm, Setting>();
@@ -61,7 +67,7 @@ CreateMap<QuestionUpdate,Question>();
                 ;
 
             CreateMap<DegreeField, DegreeFieldDto>()
-                .ForMember(r => r.Degree, src => src.MapFrom(src => src.Degree))    
+                .ForMember(r => r.Degree, src => src.MapFrom(src => src.Degree))
                 .ForMember(r => r.Field, src => src.MapFrom(src => src.Field))
                 .ForMember(r => r.UniversityName, src => src.MapFrom(src => src.University.Name))
                 .ForMember(r => r.CountryName, src => src.MapFrom(src => src.University.Country.Name))

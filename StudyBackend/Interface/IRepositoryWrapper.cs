@@ -1,5 +1,6 @@
 using BackEndStructuer.Interface;
 using BackEndStructuer.Interface;
+using StudyBackend.Interface;
 
 namespace BackEndStructuer.Repository
 {
@@ -19,5 +20,7 @@ IFieldRepository Field{get;}
         IDegreeRepository Degree { get; }
         IUniversityRepository University { get; }
         ICountryRepository Country { get; }
+        
+        IMedicalFieldRepository MedicalField { get; }
     }
 }

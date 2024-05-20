@@ -8,5 +8,7 @@ namespace BackEndStructuer.Entities
         public List<DegreeField>? DegreeFields { get; set; } = new List<DegreeField>();
 
 
+        public bool? Priority { get; set; } = false;
+
     }
 }

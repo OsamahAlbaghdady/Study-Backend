@@ -9,5 +9,7 @@ namespace BackEndStructuer.DATA.DTOs.QuestionDto
         public string? QuestionAnswer { get; set; }
 
         public CountryDto.CountryDto? Country { get; set; }
+
+        public string? VideoUrl { get; set; }
     }
 }

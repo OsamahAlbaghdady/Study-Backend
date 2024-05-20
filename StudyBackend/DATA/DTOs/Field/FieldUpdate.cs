@@ -1,14 +1,14 @@
-using System.ComponentModel.DataAnnotations;
-
-namespace BackEndStructuer.DATA.DTOs.FieldForm
+namespace BackEndStructuer.DATA.DTOs.FieldUpdate
 {
 
-    public class FieldForm 
+    public class FieldUpdate
     {
-        [Required]
-        public string Name { get; set; }
         
+        public string? Name { get; set; }
 
+        public long? Price { get; set; }
+
+        public bool? Priority { get; set; } = false;
 
 
     }

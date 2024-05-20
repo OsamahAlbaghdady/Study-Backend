@@ -20,5 +20,6 @@ namespace BackEndStructuer.Entities
         
         public University? University { get; set; }
 
+
     }
 }
