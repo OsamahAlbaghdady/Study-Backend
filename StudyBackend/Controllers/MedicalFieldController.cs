@@ -16,7 +16,6 @@ public class MedicalFieldController : BaseController
         _medicalFieldService = medicalFieldService;
     }
     
-    [Authorize]
     [HttpGet]
     public async Task<ActionResult<List<MedicalFieldDto>>> GetAll([FromQuery] MedicalFieldFilter filter) => Ok(await _medicalFieldService.GetAll(filter) , filter.PageNumber);
     
