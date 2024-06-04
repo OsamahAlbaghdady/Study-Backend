@@ -4,8 +4,6 @@ namespace BackEndStructuer.Entities
     {
         public string? Name { get; set; }
 
-        public string? VideoUrl { get; set; }
-
         public List<UniversityDegree>? UniversityDegrees { get; set; } = new List<UniversityDegree>();
 
         public List<DegreeField>? DegreeFields { get; set; } = new List<DegreeField>();

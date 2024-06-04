@@ -25,20 +25,31 @@ public class CountryServices : ICountryServices
 {
     private readonly IMapper _mapper;
     private readonly IRepositoryWrapper _repositoryWrapper;
+    private readonly IFileService _fileService;
 
     public CountryServices(
         IMapper mapper,
-        IRepositoryWrapper repositoryWrapper
+        IRepositoryWrapper repositoryWrapper ,
+        IFileService fileService
     )
     {
         _mapper = mapper;
         _repositoryWrapper = repositoryWrapper;
+        _fileService = fileService;
     }
 
 
     public async Task<(Country? country, string? error)> Create(CountryForm countryForm)
     {
         var country = _mapper.Map<Country>(countryForm);
+        
+        var (file , error) = await _fileService.Upload(countryForm.Video);
+        if (error != null)
+        {
+            return (null, error);
+        }
+        country.VideoUrl = file;
+
         var result = await _repositoryWrapper.Country.Add(country);
         return result == null ? (null, "country could not add") : (country, null);
     }
@@ -64,6 +75,16 @@ public class CountryServices : ICountryServices
         if (country == null)
         {
             return (null, "country not found");
+        }
+        
+        if (countryUpdate.Video != null)
+        {
+            var (file, error) = await _fileService.Upload(countryUpdate.Video);
+            if (error != null)
+            {
+                return (null, error);
+            }
+            country.VideoUrl = file;
         }
 
         country = _mapper.Map(countryUpdate, country);

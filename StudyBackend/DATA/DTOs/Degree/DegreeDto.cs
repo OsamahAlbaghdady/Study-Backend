@@ -6,6 +6,5 @@ namespace BackEndStructuer.DATA.DTOs.DegreeDto
 
         public string? Name { get; set; }
 
-        public string? VideoUrl { get; set; }
     }
 }

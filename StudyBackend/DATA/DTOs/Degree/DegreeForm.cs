@@ -9,6 +9,5 @@ namespace BackEndStructuer.DATA.DTOs.DegreeUpdate
         [Required]
         public string Name { get; set; }
 
-        public IFormFile Video { get; set; }
     }
 }

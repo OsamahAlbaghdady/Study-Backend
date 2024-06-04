@@ -6,9 +6,8 @@ namespace BackEndStructuer.DATA.DTOs.DegreeForm
 
     public class DegreeUpdate
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
   
-        public FileForm Video { get; set; }
     }
 }

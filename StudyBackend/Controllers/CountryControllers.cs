@@ -32,7 +32,7 @@ namespace BackEndStructuer.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<ActionResult<Country>> Create([FromBody] CountryForm countryForm) => Ok(await _countryServices.Create(countryForm));
+        public async Task<ActionResult<Country>> Create([FromForm] CountryForm countryForm) => Ok(await _countryServices.Create(countryForm));
 
         [Authorize]
         [HttpPut("{id}")]
