@@ -11,6 +11,7 @@ using BackEndStructuer.DATA.DTOs.CountryForm;
 using BackEndStructuer.DATA.DTOs.CountryUpdate;
 using BackEndStructuer.Entities;
 using System.Threading.Tasks;
+using BackEndStructuer.DATA.DTOs.File;
 
 namespace BackEndStructuer.Controllers
 {
@@ -36,11 +37,18 @@ namespace BackEndStructuer.Controllers
 
         [Authorize]
         [HttpPut("{id}")]
-        public async Task<ActionResult<Country>> Update([FromBody] CountryUpdate countryUpdate, Guid id) => Ok(await _countryServices.Update(id , countryUpdate));
+        public async Task<ActionResult<Country>> Update([FromForm] CountryUpdate countryUpdate, Guid id) => Ok(await _countryServices.Update(id , countryUpdate));
 
         [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Country>> Delete(Guid id) =>  Ok( await _countryServices.Delete(id));
+        
+       
+        [HttpPost("addDegrees")]
+        public async Task<ActionResult<string>> Upload() => Ok(await _countryServices.AddDegrees());
+        
+        [HttpPost("ExportExcel")]
+        public async Task<ActionResult<string>> ExportExcel([FromForm] FileForm file, Guid UnivercityId, DegreesEnum degree) => Ok(await _countryServices.ExportExcel(file, UnivercityId));
         
     }
 }

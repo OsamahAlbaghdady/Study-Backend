@@ -19,6 +19,7 @@
         </PackageReference>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0" />
+        <PackageReference Include="OfficeOpenXml.Extension.AspNetCore" Version="1.0.0" />
         <PackageReference Include="OneSignalApi" Version="2.0.2" />
         <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />

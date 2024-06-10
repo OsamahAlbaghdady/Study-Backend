@@ -29,6 +29,9 @@ public interface IDegreeFieldServices
 
     Task<(DegreeField? degreeField, string? error)> Update(Guid id, DegreeFieldUpdate degreeFieldUpdate);
     Task<(DegreeField? degreeField, string? error)> Delete(Guid id);
+    
+    
+    
 }
 
 public class DegreeFieldServices : IDegreeFieldServices
