@@ -47,11 +47,11 @@ public class UniversityServices : IUniversityServices
     public async Task<(List<UniversityDto> universitys, int? totalCount, string? error)> GetAll(UniversityFilter filter)
     {
         var (universitys, totalCount) = await _repositoryWrapper.University.GetAll<UniversityDto>(
-            x => (
-                (filter.Name == null || filter.Name.Contains(x.Name)) &&
+            x => 
+                (filter.Name == null || x.Name.Contains(filter.Name)) &&
                 (filter.CountryId == null || filter.CountryId == x.CountryId) &&
                 (filter.FieldId == null || x.UniversityDegrees.Any(ud => ud.Degree.DegreeFields.Any(df => df.FieldId == filter.FieldId)))
-                ),
+                ,
             filter.PageNumber, filter.PageSize
         );
         return (universitys, totalCount, null);
