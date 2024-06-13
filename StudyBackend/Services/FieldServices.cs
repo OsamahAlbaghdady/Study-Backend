@@ -50,19 +50,23 @@ public class FieldServices : IFieldServices
 
     public async Task<(List<FieldDto> fields, int? totalCount, string? error)> GetAll(FieldFilter filter)
     {
-        var fields = await _context.Fields.OrderBy(x => x.Priority)
+        var fields =  _context.Fields.OrderBy(x => x.Priority)
             .Where(x =>
                 (filter.Name == null || x.Name!.Contains(filter.Name)) &&
                 (filter.CountryId == null || x.DegreeFields.Any(x => x.University.CountryId == filter.CountryId))
             )
-            .Skip((filter.PageNumber - 1) * filter.PageSize).Take(filter.PageSize)
+         ;
+
+        var totalCount = await fields.CountAsync();
+
+
+        var response = await fields
+            .Skip((filter.PageNumber - 1) * filter.PageSize)
+            .Take(filter.PageSize)
             .ProjectTo<FieldDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
-
-        var totalCount = await _context.Fields.CountAsync(x => (filter.Name == null || x.Name!.Contains(filter.Name)));
-
-
-        return (fields, totalCount, null);
+        
+        return (response, totalCount, null);
     }
 
     public async Task<(FieldDto? field, string? error)> GetById(Guid id)
