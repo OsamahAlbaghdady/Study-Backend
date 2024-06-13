@@ -9,5 +9,7 @@ namespace BackEndStructuer.DATA.DTOs.FieldFilter
         
         public bool? Priority { get; set; } = false;
 
+        public Guid? CountryId { get; set; }
+
     }
 }
