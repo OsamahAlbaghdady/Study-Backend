@@ -55,7 +55,7 @@ public class FieldServices : IFieldServices
                 (filter.Name == null || x.Name!.Contains(filter.Name)) &&
                 (filter.CountryId == null || x.DegreeFields.Any(x => x.University.CountryId == filter.CountryId)) &&
                 (filter.DegreeId == null || x.DegreeFields.Any(x => x.DegreeId == filter.DegreeId)) 
-            )
+            ).OrderByDescending(x => x.Priority)
          ;
 
         var totalCount = await fields.CountAsync();

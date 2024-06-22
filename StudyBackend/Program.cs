@@ -26,6 +26,10 @@ builder.Services.AddCors(options =>
     .WithExposedHeaders("status")); 
 });
 
+builder.WebHost.ConfigureKestrel(options => options.Limits.MaxRequestBodySize = 50 * 1024 * 1024);
+
+
+
 // Add services to the container.
 
 builder.Services.AddControllers()
