@@ -27,7 +27,7 @@ builder.Services.AddCors(options =>
     .WithExposedHeaders("status")); 
 });
 
-builder.WebHost.ConfigureKestrel(options => options.Limits.MaxRequestBodySize = 50 * 1024 * 1024);
+builder.WebHost.ConfigureKestrel(options => options.Limits.MaxRequestBodySize = 500 * 1024 * 1024);
 
 builder.Services.Configure<FormOptions>(options =>
 {
