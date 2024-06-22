@@ -2,6 +2,7 @@ using System.Globalization;
 using BackEndStructuer.Extensions;
 using BackEndStructuer.Extensions;
 using BackEndStructuer.Helpers;
+using Microsoft.AspNetCore.Http.Features;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Serilog;
@@ -28,7 +29,10 @@ builder.Services.AddCors(options =>
 
 builder.WebHost.ConfigureKestrel(options => options.Limits.MaxRequestBodySize = 50 * 1024 * 1024);
 
-
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 100_000_000; // Set to 100 MB
+});
 
 // Add services to the container.
 
