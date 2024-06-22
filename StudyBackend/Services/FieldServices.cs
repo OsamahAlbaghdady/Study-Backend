@@ -53,7 +53,8 @@ public class FieldServices : IFieldServices
         var fields =  _context.Fields.OrderBy(x => x.Priority)
             .Where(x =>
                 (filter.Name == null || x.Name!.Contains(filter.Name)) &&
-                (filter.CountryId == null || x.DegreeFields.Any(x => x.University.CountryId == filter.CountryId))
+                (filter.CountryId == null || x.DegreeFields.Any(x => x.University.CountryId == filter.CountryId)) &&
+                (filter.DegreeId == null || x.DegreeFields.Any(x => x.DegreeId == filter.DegreeId)) 
             )
          ;
 
