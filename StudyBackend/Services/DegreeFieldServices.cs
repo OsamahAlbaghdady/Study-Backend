@@ -1,4 +1,5 @@
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using BackEndStructuer.DATA;
 using BackEndStructuer.DATA.DTOs.DegreeField;
 using BackEndStructuer.DATA.DTOs.DegreeFieldFilter;
@@ -15,13 +16,13 @@ namespace BackEndStructuer.Services;
 public interface IDegreeFieldServices
 {
     Task<(DegreeField? degreeField, string? error)> Create(DegreeFieldForm degreeFieldForm);
-    
+
     // multi create
     Task<(List<DegreeField> degreeFields, string? error)> Create(List<DegreeFieldForm> degreeFieldForms);
-    
+
     // update all 
     Task<(List<DegreeField> degreeFields, string? error)> Update(List<DegreeFieldMultiUpdate> degreeFieldUpdates);
-    
+
     Task<(List<DegreeFieldDto> degreeFields, int? totalCount, string? error)> GetAll(DegreeFieldFilter filter);
 
     // get by id 
@@ -29,9 +30,6 @@ public interface IDegreeFieldServices
 
     Task<(DegreeField? degreeField, string? error)> Update(Guid id, DegreeFieldUpdate degreeFieldUpdate);
     Task<(DegreeField? degreeField, string? error)> Delete(Guid id);
-    
-    
-    
 }
 
 public class DegreeFieldServices : IDegreeFieldServices
@@ -98,9 +96,10 @@ public class DegreeFieldServices : IDegreeFieldServices
             return (null, e.Message);
         }
     }
-    
+
     // multi update 
-    public async Task<(List<DegreeField> degreeFields, string? error)> Update(List<DegreeFieldMultiUpdate> degreeFieldUpdates)
+    public async Task<(List<DegreeField> degreeFields, string? error)> Update(
+        List<DegreeFieldMultiUpdate> degreeFieldUpdates)
     {
         try
         {
@@ -112,7 +111,7 @@ public class DegreeFieldServices : IDegreeFieldServices
                 _mapper.Map(degreeFieldUpdate, degreeField);
                 degreeFields.Add(degreeField);
             }
-            
+
             _context.DegreeFields.UpdateRange(degreeFields);
             await _context.SaveChangesAsync();
 
@@ -127,17 +126,25 @@ public class DegreeFieldServices : IDegreeFieldServices
     public async Task<(List<DegreeFieldDto> degreeFields, int? totalCount, string? error)> GetAll(
         DegreeFieldFilter filter)
     {
-        var (degreeFields, totalCount) = await _repositoryWrapper.DegreeField.GetAll<DegreeFieldDto>(
-            x => (filter.DegreeId == null || x.DegreeId == filter.DegreeId) &&
-                 (filter.FieldId == null || x.FieldId == filter.FieldId) &&
-                 (filter.CountryId == null || x.University.CountryId == filter.CountryId) &&
-                 (filter.StartDate == null ||
-                  x.StartDate.Value.ToUniversalTime() >= filter.StartDate.Value.ToUniversalTime()) &&
-                 (filter.EndDate == null ||
-                  x.EndDate.Value.ToUniversalTime() <= filter.EndDate.Value.ToUniversalTime()) &&
-                 (filter.UniversityId == null || x.UniversityId == filter.UniversityId),
-            filter.PageNumber, filter.PageSize
-        );
+        var query = _context.DegreeFields
+                .OrderByDescending(x => x.CreationDate)
+                .Where(x => (filter.DegreeId == null || x.DegreeId == filter.DegreeId) &&
+                            (filter.FieldId == null || x.FieldId == filter.FieldId) &&
+                            (filter.CountryId == null || x.University.CountryId == filter.CountryId) &&
+                            (filter.StartDate == null ||
+                             x.StartDate.Value.ToUniversalTime() >= filter.StartDate.Value.ToUniversalTime()) &&
+                            (filter.EndDate == null ||
+                             x.EndDate.Value.ToUniversalTime() <= filter.EndDate.Value.ToUniversalTime()) &&
+                            (filter.UniversityId == null || x.UniversityId == filter.UniversityId))
+            ;
+
+
+        var totalCount = await query.CountAsync();
+
+        var degreeFields = await query
+            .Skip((filter.PageNumber - 1) * filter.PageSize)
+            .Take(filter.PageSize)
+            .ProjectTo<DegreeFieldDto>(_mapper.ConfigurationProvider).ToListAsync();
 
         return (degreeFields, totalCount, null);
     }
@@ -154,6 +161,9 @@ public class DegreeFieldServices : IDegreeFieldServices
     {
         var degreeField = await _repositoryWrapper.DegreeField.GetById(id);
         if (degreeField == null) return (null, "DegreeField not found");
+
+        degreeFieldUpdate.StartDate = degreeFieldUpdate.StartDate?.ToUniversalTime();
+        degreeFieldUpdate.EndDate = degreeFieldUpdate.EndDate?.ToUniversalTime();
         _mapper.Map(degreeFieldUpdate, degreeField);
         var result = await _repositoryWrapper.DegreeField.Update(degreeField);
         if (result == null) return (null, "Error in updating degreeField");
@@ -164,6 +174,7 @@ public class DegreeFieldServices : IDegreeFieldServices
     {
         var degreeField = await _repositoryWrapper.DegreeField.GetById(id);
         if (degreeField == null) return (null, "DegreeField not found");
+
         var result = await _repositoryWrapper.DegreeField.Delete(id);
         if (result == null) return (null, "Error in deleting degreeField");
         return (result, null);
