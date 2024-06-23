@@ -3,10 +3,9 @@ using System.ComponentModel.DataAnnotations;
 namespace BackEndStructuer.DATA.DTOs.CountryForm
 {
 
-    public class CountryForm 
+    public class CountryUpdate 
     {
-        [Required]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         
         public IFormFile? Video { get; set; }
 
