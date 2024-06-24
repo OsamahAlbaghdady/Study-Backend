@@ -1,4 +1,6 @@
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using BackEndStructuer.DATA;
 using BackEndStructuer.DATA.DTOs.DegreeDto;
 using BackEndStructuer.DATA.DTOs.DegreeFilter;
 using BackEndStructuer.DATA.DTOs.DegreeForm;
@@ -7,6 +9,7 @@ using BackEndStructuer.DATA.DTOs.File;
 using BackEndStructuer.Entities;
 using BackEndStructuer.Repository;
 using BackEndStructuer.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackEndStructuer.Services;
 
@@ -27,16 +30,19 @@ public class DegreeServices : IDegreeServices
     private readonly IMapper _mapper;
     private readonly IRepositoryWrapper _repositoryWrapper;
     private readonly IFileService _fileService;
+    private readonly DataContext _context;
 
     public DegreeServices(
         IMapper mapper,
         IRepositoryWrapper repositoryWrapper,
-        IFileService fileService
+        IFileService fileService ,
+        DataContext context
     )
     {
         _mapper = mapper;
         _repositoryWrapper = repositoryWrapper;
         _fileService = fileService;
+        _context = context;
     }
 
 
@@ -49,16 +55,27 @@ public class DegreeServices : IDegreeServices
 
     public async Task<(List<DegreeDto> degrees, int? totalCount, string? error)> GetAll(DegreeFilter filter)
     {
-        var (degrees, totalCount) = await _repositoryWrapper.Degree.GetAll<DegreeDto>(
-            x =>
-                (filter.Name == null || x.Name.Contains(filter.Name)) &&
-                (filter.CountryId == null ||
-                 x.UniversityDegrees.Any(cd => cd.University.CountryId == filter.CountryId)) &&
-                (filter.UniversityId == null || x.UniversityDegrees.Any(cd => cd.UniversityId == filter.UniversityId))
-            ,
-            filter.PageNumber, filter.PageSize
+        
+     
+        var degrees = _context.Degrees.Where(x =>
+            (filter.Name == null || x.Name.Contains(filter.Name)) &&
+            (filter.CountryId == null ||
+             x.UniversityDegrees.Any(cd => cd.University.CountryId == filter.CountryId)) &&
+            (filter.UniversityId == null || x.UniversityDegrees.Any(cd => cd.UniversityId == filter.UniversityId))
         );
-        return (degrees, totalCount, null);
+        
+        var totalCount = await degrees.CountAsync();
+        
+        var result = await degrees
+            .OrderBy(x => x.CreationDate)
+            .Skip((filter.PageNumber - 1) * filter.PageSize)
+            .Take(filter.PageSize)
+            .ProjectTo<DegreeDto>(_mapper.ConfigurationProvider)
+            .ToListAsync();
+        
+        
+        return (result, totalCount, null);
+        
     }
 
     public async Task<(DegreeDto? degree, string? error)> GetById(Guid id)
