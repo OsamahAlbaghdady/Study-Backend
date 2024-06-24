@@ -2,7 +2,6 @@ namespace BackEndStructuer.Entities
 {
     public class DegreeField : BaseEntity<Guid>
     {
-        
         public Guid? DegreeId { get; set; }
         
         public Degree? Degree { get; set; }
@@ -11,7 +10,7 @@ namespace BackEndStructuer.Entities
         
         public Field? Field { get; set; }
         
-        public long? Price { get; set; }
+        public string? Price { get; set; }
 
         public DateTime? StartDate { get; set; }
         

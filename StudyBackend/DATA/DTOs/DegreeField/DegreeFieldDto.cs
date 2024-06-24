@@ -6,7 +6,7 @@ namespace BackEndStructuer.DATA.DTOs.DegreeField
         
         public FieldDto.FieldDto? Field { get; set; }
         
-        public long? Price { get; set; }
+        public string? Price { get; set; }
         
         public DateTime? StartDate { get; set; }
         

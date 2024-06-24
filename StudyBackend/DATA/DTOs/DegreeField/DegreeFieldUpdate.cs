@@ -11,7 +11,7 @@ namespace BackEndStructuer.DATA.DTOs.DegreeFieldForm
         [Required]
         public Guid FieldId { get; set; }
         
-        public long? Price { get; set; }
+        public string? Price { get; set; }
         
         [Required]
         public Guid UniversityId { get; set; }

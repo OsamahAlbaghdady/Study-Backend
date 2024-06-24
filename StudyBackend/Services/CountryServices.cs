@@ -214,11 +214,7 @@ public class CountryServices : ICountryServices
                             // update price then continue
                             var oldDegreeFeild = dgreeFeilds.FirstOrDefault(x =>
                                 x.FieldId == filed.Id && x.UniversityId == UnivercityId && x.DegreeId == BecId);
-                            oldDegreeFeild.Price =
-                                long.TryParse(worksheet?.Cells[row, 2]?.Value?.ToString()?.Trim().Replace(",", ""),
-                                    out var newPrice)
-                                    ? newPrice
-                                    : 0;
+                            oldDegreeFeild.Price = worksheet?.Cells[row, 2]?.Value?.ToString()?.Trim().Replace(",", "") ?? "0";
                             _context.DegreeFields.Update(oldDegreeFeild);
                             continue;
                         }
@@ -230,10 +226,7 @@ public class CountryServices : ICountryServices
                             UniversityId = UnivercityId,
                             DegreeId = BecId,
                             Deleted = false,
-                            Price = long.TryParse(
-                                worksheet?.Cells[row, 2]?.Value?.ToString()?.Trim().Replace(",", ""), out var price)
-                                ? price
-                                : 0,
+                            Price = worksheet?.Cells[row, 2]?.Value?.ToString()?.Trim().Replace(",", "") ?? "0",
                             StartDate = null,
                             EndDate = null
                         };
@@ -268,11 +261,7 @@ public class CountryServices : ICountryServices
                             // update price then continue
                             var oldDegreeFeild = dgreeFeilds.FirstOrDefault(x =>
                                 x.FieldId == filed.Id && x.UniversityId == UnivercityId && x.DegreeId == MasId);
-                            oldDegreeFeild.Price =
-                                long.TryParse(worksheet?.Cells[row, 4]?.Value?.ToString()?.Trim().Replace(",", ""),
-                                    out var newPrice)
-                                    ? newPrice
-                                    : 0;
+                            oldDegreeFeild.Price = worksheet?.Cells[row, 4]?.Value?.ToString()?.Trim().Replace(",", "") ?? "0";
                             _context.DegreeFields.Update(oldDegreeFeild);
                             continue;
                         }
@@ -284,10 +273,7 @@ public class CountryServices : ICountryServices
                             UniversityId = UnivercityId,
                             DegreeId = MasId,
                             Deleted = false,
-                            Price = long.TryParse(
-                                worksheet?.Cells[row, 4]?.Value?.ToString()?.Trim().Replace(",", ""), out var price)
-                                ? price
-                                : 0,
+                            Price = worksheet?.Cells[row, 4]?.Value?.ToString()?.Trim().Replace(",", "") ?? "0",
                             StartDate = null,
                             EndDate = null
                         };
@@ -321,11 +307,7 @@ public class CountryServices : ICountryServices
                             // update price then continue
                             var oldDegreeFeild = dgreeFeilds.FirstOrDefault(x =>
                                 x.FieldId == filed.Id && x.UniversityId == UnivercityId && x.DegreeId == DocId);
-                            oldDegreeFeild.Price =
-                                long.TryParse(worksheet?.Cells[row, 6]?.Value?.ToString()?.Trim().Replace(",", ""),
-                                    out var newPrice)
-                                    ? newPrice
-                                    : 0;
+                            oldDegreeFeild.Price = worksheet?.Cells[row, 6]?.Value?.ToString()?.Trim().Replace(",", "") ?? "0";
                             _context.DegreeFields.Update(oldDegreeFeild);
                             continue;
                         }
@@ -336,10 +318,7 @@ public class CountryServices : ICountryServices
                             UniversityId = UnivercityId,
                             DegreeId = DocId,
                             Deleted = false,
-                            Price = long.TryParse(
-                                worksheet?.Cells[row, 6]?.Value?.ToString()?.Trim().Replace(",", ""), out var price)
-                                ? price
-                                : 0,
+                            Price = worksheet?.Cells[row, 6]?.Value?.ToString()?.Trim().Replace(",", "") ?? "0",
                             StartDate = null,
                             EndDate = null
                         };
