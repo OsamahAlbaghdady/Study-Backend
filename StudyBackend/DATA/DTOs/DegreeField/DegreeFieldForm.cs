@@ -10,7 +10,7 @@ namespace BackEndStructuer.DATA.DTOs.DegreeFieldUpdate
             
             public Guid? FieldId { get; set; }
             
-            public long? Price { get; set; }
+            public string? Price { get; set; }
             
             public Guid? UniversityId { get; set; }
             
