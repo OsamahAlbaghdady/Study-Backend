@@ -1,155 +1,238 @@
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\appsettings.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\StudyBackend.staticwebassets.runtime.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\StudyBackend.exe
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\StudyBackend.deps.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\StudyBackend.runtimeconfig.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\StudyBackend.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\StudyBackend.pdb
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\AutoMapper.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\BCrypt.Net.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Humanizer.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\JsonSubTypes.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Npgsql.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\OneSignalApi.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Polly.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\RestSharp.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.AspNetCore.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Sinks.Console.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Serilog.Sinks.File.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\System.CodeDom.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\bin\Debug\net7.0\TextExtensions.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.csproj.AssemblyReference.cache
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.AssemblyInfoInputs.cache
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.AssemblyInfo.cs
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.csproj.CoreCompileInputs.cache
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.build.StudyBackend.props
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.StudyBackend.props
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.StudyBackend.props
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\scopedcss\bundle\StudyBackend.styles.css
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBac.AEFD98EB.Up2Date
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\refint\StudyBackend.dll
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.pdb
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\StudyBackend.genruntimeconfig.cache
-C:\Users\OSAMAH\Desktop\New folder (10)\new_version_structure_c-main\StudyBackend\obj\Debug\net7.0\ref\StudyBackend.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\appsettings.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\StudyBackend.staticwebassets.runtime.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\StudyBackend.exe
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\StudyBackend.deps.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\StudyBackend.runtimeconfig.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\StudyBackend.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\StudyBackend.pdb
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\AutoMapper.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\BCrypt.Net.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Humanizer.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\JsonSubTypes.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Npgsql.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\OneSignalApi.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Polly.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\RestSharp.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.AspNetCore.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Sinks.Console.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Serilog.Sinks.File.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\System.CodeDom.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\TextExtensions.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.csproj.AssemblyReference.cache
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.AssemblyInfoInputs.cache
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.AssemblyInfo.cs
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.csproj.CoreCompileInputs.cache
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.sourcelink.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.build.StudyBackend.props
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.StudyBackend.props
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.StudyBackend.props
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\scopedcss\bundle\StudyBackend.styles.css
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBac.AEFD98EB.Up2Date
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\refint\StudyBackend.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.pdb
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\StudyBackend.genruntimeconfig.cache
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\obj\Debug\net7.0\ref\StudyBackend.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\EPPlus.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\EPPlus.Interfaces.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\EPPlus.System.Drawing.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\OfficeOpenXml.Extension.AspNetCore.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\OSAMAH\Documents\GitHub\Study-Backend\StudyBackend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/appsettings.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/StudyBackend.staticwebassets.runtime.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/StudyBackend.exe
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/StudyBackend.deps.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/StudyBackend.runtimeconfig.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/StudyBackend.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/StudyBackend.pdb
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/AutoMapper.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/BCrypt.Net.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Humanizer.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/JsonSubTypes.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Microsoft.OpenApi.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Npgsql.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/OneSignalApi.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Polly.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/RestSharp.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.AspNetCore.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Extensions.Hosting.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Extensions.Logging.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Formatting.Compact.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Settings.Configuration.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.Console.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.Debug.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.File.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/bin/Debug/net7.0/TextExtensions.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.csproj.AssemblyReference.cache
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.AssemblyInfoInputs.cache
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.AssemblyInfo.cs
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.csproj.CoreCompileInputs.cache
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.build.StudyBackend.props
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.StudyBackend.props
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.StudyBackend.props
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/scopedcss/bundle/StudyBackend.styles.css
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBac.AEFD98EB.Up2Date
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/refint/StudyBackend.dll
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.pdb
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/StudyBackend.genruntimeconfig.cache
+C:/Users/OSAMAH/Desktop/New folder (10)/new_version_structure_c-main/StudyBackend/obj/Debug/net7.0/ref/StudyBackend.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/appsettings.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.staticwebassets.runtime.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.exe
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.deps.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.runtimeconfig.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.pdb
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/AutoMapper.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/BCrypt.Net.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Humanizer.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/JsonSubTypes.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.OpenApi.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Npgsql.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/OneSignalApi.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Polly.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/RestSharp.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.AspNetCore.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Extensions.Hosting.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Extensions.Logging.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Formatting.Compact.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Settings.Configuration.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.Console.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.Debug.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.File.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/TextExtensions.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.csproj.AssemblyReference.cache
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.AssemblyInfoInputs.cache
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.AssemblyInfo.cs
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.csproj.CoreCompileInputs.cache
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.sourcelink.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.build.StudyBackend.props
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.StudyBackend.props
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.StudyBackend.props
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/scopedcss/bundle/StudyBackend.styles.css
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBac.AEFD98EB.Up2Date
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/refint/StudyBackend.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.pdb
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.genruntimeconfig.cache
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/obj/Debug/net7.0/ref/StudyBackend.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/EPPlus.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/EPPlus.Interfaces.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/EPPlus.System.Drawing.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IO.RecyclableMemoryStream.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/OfficeOpenXml.Extension.AspNetCore.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/OSAMAH/Documents/GitHub/Study-Backend/StudyBackend/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/appsettings.Development.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/appsettings.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.staticwebassets.runtime.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.deps.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.runtimeconfig.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/StudyBackend.pdb
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/AutoMapper.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/BCrypt.Net.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/EPPlus.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/EPPlus.Interfaces.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/EPPlus.System.Drawing.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Humanizer.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/JsonSubTypes.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.IO.RecyclableMemoryStream.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Npgsql.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/OfficeOpenXml.Extension.AspNetCore.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/OneSignalApi.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Polly.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/RestSharp.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.AspNetCore.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Extensions.Hosting.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Extensions.Logging.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Formatting.Compact.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Settings.Configuration.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.Console.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.Debug.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Serilog.Sinks.File.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/System.CodeDom.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/System.Drawing.Common.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/TextExtensions.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.csproj.AssemblyReference.cache
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.AssemblyInfoInputs.cache
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.AssemblyInfo.cs
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.csproj.CoreCompileInputs.cache
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.MvcApplicationPartsAssemblyInfo.cs
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.MvcApplicationPartsAssemblyInfo.cache
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.sourcelink.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets.build.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets.development.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.StudyBackend.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.build.StudyBackend.props
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.StudyBackend.props
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.StudyBackend.props
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/scopedcss/bundle/StudyBackend.styles.css
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBac.AEFD98EB.Up2Date
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/refint/StudyBackend.dll
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.pdb
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/StudyBackend.genruntimeconfig.cache
+/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/Debug/net7.0/ref/StudyBackend.dll

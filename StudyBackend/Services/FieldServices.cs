@@ -50,25 +50,26 @@ public class FieldServices : IFieldServices
 
     public async Task<(List<FieldDto> fields, int? totalCount, string? error)> GetAll(FieldFilter filter)
     {
-        var fields =  _context.Fields.OrderBy(x => x.Priority)
+        var fieldsQuery = _context.Fields
             .Where(x =>
                 (filter.Name == null || x.Name!.Contains(filter.Name)) &&
-                (filter.CountryId == null || x.DegreeFields.Any(x => x.University.CountryId == filter.CountryId)) &&
-                (filter.DegreeId == null || x.DegreeFields.Any(x => x.DegreeId == filter.DegreeId)) 
-            ).OrderByDescending(x => x.Priority)
-         ;
+                (filter.CountryId == null || x.DegreeFields.Any(df => df.University.CountryId == filter.CountryId)) &&
+                (filter.DegreeId == null || x.DegreeFields.Any(df => df.DegreeId == filter.DegreeId))
+            )
+            .OrderBy(x => !x.Priority) // Consistent sorting
+            .ThenBy(x => x.Id); // Adding a secondary sort to ensure consistent order
 
-        var totalCount = await fields.CountAsync();
+        var totalCount = await fieldsQuery.CountAsync();
 
-
-        var response = await fields
+        var response = await fieldsQuery
             .Skip((filter.PageNumber - 1) * filter.PageSize)
             .Take(filter.PageSize)
             .ProjectTo<FieldDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
-        
+
         return (response, totalCount, null);
     }
+
 
     public async Task<(FieldDto? field, string? error)> GetById(Guid id)
     {

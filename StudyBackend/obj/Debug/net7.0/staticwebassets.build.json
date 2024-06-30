@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jh1BxucJSNzpNxtsC+d/BtJATICvAyXt5/ZEzEAnw10=",
+  "Hash": "3qX2rJosYOcmMHpvbvOkw6QYaTDBtxO/EeTKIUPDIKE=",
   "Source": "StudyBackend",
   "BasePath": "_content/StudyBackend",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "StudyBackend\\wwwroot",
+      "Name": "StudyBackend/wwwroot",
       "Source": "StudyBackend",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
+      "ContentRoot": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/",
       "BasePath": "_content/StudyBackend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\1d367de5-64a4-4feb-8ba8-221324c17790.mp4",
+      "Identity": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/Attachments/1d367de5-64a4-4feb-8ba8-221324c17790.mp4",
       "SourceId": "StudyBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
+      "ContentRoot": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/",
       "BasePath": "_content/StudyBackend",
       "RelativePath": "Attachments/1d367de5-64a4-4feb-8ba8-221324c17790.mp4",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\1d367de5-64a4-4feb-8ba8-221324c17790.mp4"
+      "OriginalItemSpec": "wwwroot/Attachments/1d367de5-64a4-4feb-8ba8-221324c17790.mp4"
     },
     {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\2c854b6d-b480-4b52-8c3d-c3be60f5dfcf.mp4",
+      "Identity": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/Attachments/2c854b6d-b480-4b52-8c3d-c3be60f5dfcf.mp4",
       "SourceId": "StudyBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
+      "ContentRoot": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/",
       "BasePath": "_content/StudyBackend",
       "RelativePath": "Attachments/2c854b6d-b480-4b52-8c3d-c3be60f5dfcf.mp4",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\2c854b6d-b480-4b52-8c3d-c3be60f5dfcf.mp4"
+      "OriginalItemSpec": "wwwroot/Attachments/2c854b6d-b480-4b52-8c3d-c3be60f5dfcf.mp4"
     },
     {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\3ededd62-244b-4659-9ff3-a406d1016dd0.mp4",
+      "Identity": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/Attachments/3ededd62-244b-4659-9ff3-a406d1016dd0.mp4",
       "SourceId": "StudyBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
+      "ContentRoot": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/",
       "BasePath": "_content/StudyBackend",
       "RelativePath": "Attachments/3ededd62-244b-4659-9ff3-a406d1016dd0.mp4",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\3ededd62-244b-4659-9ff3-a406d1016dd0.mp4"
+      "OriginalItemSpec": "wwwroot/Attachments/3ededd62-244b-4659-9ff3-a406d1016dd0.mp4"
     },
     {
-      "Identity": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
+      "Identity": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/Attachments/c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
       "SourceId": "StudyBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\wwwroot\\",
+      "ContentRoot": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/wwwroot/",
       "BasePath": "_content/StudyBackend",
       "RelativePath": "Attachments/c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe",
       "AssetKind": "All",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Attachments\\c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe"
+      "OriginalItemSpec": "wwwroot/Attachments/c3a938d1-3df4-4b4b-af12-9692fa5fefff.exe"
     }
   ]
 }

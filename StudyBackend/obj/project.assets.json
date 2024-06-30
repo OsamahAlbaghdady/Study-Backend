@@ -3592,26 +3592,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OSAMAH\\.nuget\\packages\\": {}
+    "/Users/OSAMAH2/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\StudyBackend.csproj",
+      "projectUniqueName": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/StudyBackend.csproj",
       "projectName": "StudyBackend",
-      "projectPath": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\StudyBackend.csproj",
-      "packagesPath": "C:\\Users\\OSAMAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OSAMAH\\Documents\\GitHub\\Study-Backend\\StudyBackend\\obj\\",
+      "projectPath": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/StudyBackend.csproj",
+      "packagesPath": "/Users/OSAMAH2/.nuget/packages/",
+      "outputPath": "/Users/OSAMAH2/Documents/GitHub/NewClone/Study-Backend/StudyBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\OSAMAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/OSAMAH2/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3624,11 +3622,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3705,24 +3698,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3731,7 +3706,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
       }
     }
   },
