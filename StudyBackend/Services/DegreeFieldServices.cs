@@ -128,6 +128,7 @@ public class DegreeFieldServices : IDegreeFieldServices
     {
         var query = _context.DegreeFields
                 .OrderByDescending(x => x.CreationDate)
+                .ThenBy(x => x.Id)
                 .Where(x => (filter.DegreeId == null || x.DegreeId == filter.DegreeId) &&
                             (filter.FieldId == null || x.FieldId == filter.FieldId) &&
                             (filter.CountryId == null || x.University.CountryId == filter.CountryId) &&

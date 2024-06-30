@@ -68,6 +68,7 @@ public class DegreeServices : IDegreeServices
         
         var result = await degrees
             .OrderBy(x => x.CreationDate)
+            .ThenBy(x => x.Id)
             .Skip((filter.PageNumber - 1) * filter.PageSize)
             .Take(filter.PageSize)
             .ProjectTo<DegreeDto>(_mapper.ConfigurationProvider)
